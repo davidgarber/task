@@ -3,6 +3,9 @@ require ('task')
 
 
 describe(Task) do
+  before() do
+    Task.clear()
+  end
   describe("#desciption") do
     it("lets you give a description") do
       test_task = Task.new("scrub the zebra")
